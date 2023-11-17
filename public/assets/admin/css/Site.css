@@ -1,0 +1,1141 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts//Roboto-Light.woff2') format('woff2'),
+      url('/fonts/Roboto-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Black.woff2') format('woff2'),
+      url('/fonts/Roboto-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Bold.woff2') format('woff2'),
+      url('/fonts/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Medium.woff2') format('woff2'),
+      url('/fonts/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Regular.woff2') format('woff2'),
+      url('/fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Thin.woff2') format('woff2'),
+      url('/fonts/Roboto-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+  }
+  
+  :focus:not([tabindex^='-']) {
+    outline: none;
+  }
+  
+  /*============================================================
+      Reset css start
+  ===============================================================*/
+  html,
+  div,
+  span,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  abbr,
+  address,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  samp,
+  small,
+  strong,
+  sub,
+  sup,
+  var,
+  b,
+  i,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    background: transparent;
+  }
+  
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section {
+    display: block;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  blockquote,
+  q {
+    quotes: none;
+  }
+  
+  blockquote:before,
+  blockquote:after,
+  q:before,
+  q:after {
+    content: '';
+    content: none;
+  }
+  
+  a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+  }
+  
+  /* change colours to suit your needs */
+  ins {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  /* change colours to suit your needs */
+  mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  del {
+    text-decoration: line-through;
+  }
+  
+  abbr[title],
+  dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  /* change border colour to suit your needs */
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+  input,
+  select {
+    vertical-align: middle;
+  }
+  
+  a,
+  a:hover {
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+  }
+  
+  img {
+    /*max-height: 100%;*/
+    max-width: 100%;
+  }
+  
+  /*============================================================
+      Reset css end
+  ===============================================================*/
+  
+  
+  
+  /*=====================================================
+      Login Section Start
+  =====================================================*/
+  .bg-img {
+    background: url(../images/loginBanner.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+  
+  }
+  
+  .card-title h1 {
+    font-size: 26px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 15px;
+    color: #000000c4;
+  }
+  
+  .card-title h5 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 5px;
+    color: #000000a1;
+  }
+  
+  .content1 {
+    margin-top: 42px;
+  }
+  
+  .content1 .password {
+    margin-top: 20px;
+  }
+  
+  .content1 .form-label,
+  .password .form-label {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #2c2626;
+    padding-left: 3px;
+  }
+  
+  .content1 .place,
+  .password .place {
+    position: relative;
+  }
+  
+  .content1 .form-control,
+  .password .form-control {
+    padding: 8px 0px 8px 50px;
+    font-size: 16px;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #C9BCBC;
+  }
+  
+  .content1 .Email-icon {
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+  }
+  
+  
+  span.leading-icon {
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+  }
+  
+  .trailing-icon-btn {
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    transform: translateY(-50%);
+  }
+  
+  #remember {
+    font-size: 19px;
+    border-radius: 3PX;
+  }
+  
+  .form-Remember {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: #474747ab;
+  }
+  
+  .form-Forget {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: #474747ab;
+    text-decoration: none;
+  }
+  
+  .btn2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+  }
+  
+  .btn1 {
+    padding-block: 13px;
+    color: #000;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    background: linear-gradient(90deg, #fdff70 22%, #f0e466 51.05%, #f2e12c 85.61%);
+    width: 100%;
+  }
+  
+  
+  .account h2 {
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .robot img {
+    width: 100%;
+    margin-top: 26px;
+  }
+  
+  /*=====================================================
+      Login Section Start
+  =====================================================*/
+  
+  
+  
+  
+  .adminDasboard_sec {
+    background-color: #fbf4a7;
+  }
+  
+  /*============================================================
+      Header CSS Section Start
+  ===============================================================*/
+  .header_sec {
+    background-color: #fff;
+    margin-left: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding: 19px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.5s ease-in-out;
+    z-index: 9;
+    border-bottom: 1px solid #fff;
+  }
+  
+  /*================= MenuBar Css =================*/
+  #nav-icon1 {
+    width: 30px;
+    height: auto;
+    border-radius: 50%;
+    z-index: 998;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    align-items: start;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  }
+  
+  #nav-icon1 span {
+    display: block;
+    border-radius: 50px;
+    height: 4px;
+    width: 30px;
+    border-radius: 50px;
+    background: #2b1519;
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+  
+  #nav-icon1 span:nth-child(1),
+  #nav-icon1 span:nth-child(3) {
+    width: 23px;
+  }
+  
+  #nav-icon1 span:nth-child(2),
+  #nav-icon1 span:nth-child(4) {
+    top: 20px;
+    right: 0px;
+  }
+  
+  #nav-icon1.open span:nth-child(1) {
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+  
+  #nav-icon1.open span:nth-child(2),
+  #nav-icon1.open span:nth-child(4) {
+    opacity: 0;
+    left: -0px;
+  }
+  
+  #nav-icon1.open span:nth-child(3) {
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+  
+  
+  /*================= Profile Css =================*/
+  .profle .headerDropdownNav li {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .profle .headerDropdownNav li ul {
+    background: #fff;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    padding: 0px;
+    border: 2px solid #eee;
+    overflow: hidden;
+  }
+  
+  .profle .headerDropdownNav>li>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: 400;
+    color: #2b1519;
+  }
+  
+  .profle .headerDropdownNav li button {
+    border: none;
+  }
+  
+  .profle .headerDropdownNav li button::after {
+    content: '';
+    display: none;
+  }
+  
+  .profle .headerDropdownNav li button h2 {
+    color: #2b1519;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: end;
+    margin-right: 10px;
+  }
+  
+  .profle .headerDropdownNav li button h2 span {
+    font-size: 13px;
+    display: block;
+    margin-top: 3px;
+  }
+  
+  .profle .headerDropdownNav li ul li {
+    display: block;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .profle .headerDropdownNav li ul li a {
+    font-size: 15px;
+    color: #000;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .profle .headerDropdownNav li ul li a:hover {
+    color: #fff;
+    background-color: #2b1519;
+  }
+  
+  .profle .headerDropdownNav li .profile-img {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    background: #fff;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+  }
+  
+  
+  .profle .headerDropdownNav li .header-notificationBTN {
+    font-size: 22px;
+  }
+  
+  .badgeStyle {
+    top: 5px;
+    right: -6px;
+    background-color: #0FB55B !important;
+  }
+  
+  
+  /*================= Scroll Header Fix Css =================*/
+  .FixHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 999;
+    box-shadow: rgb(50 50 93 / 15%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px;
+    transition: all 0.8s ease-in-out;
+  }
+  
+  .FixHeader .profle .headerDropdownNav li .header-notificationBTN,
+  .FixHeader .profle .headerDropdownNav li a {
+    color: #000;
+  }
+  
+  .FixHeader .profle .headerDropdownNav li .header-notificationBTN:hover,
+  .FixHeader .profle .headerDropdownNav li a:hover,
+  .profle .headerDropdownNav li button:hover,
+  .profle .headerDropdownNav li button.show,
+  .profle .headerDropdownNav>li>a:hover {
+    color: #fcff33;
+  }
+  
+  /*============================================================
+      Header CSS Section Start
+  ===============================================================*/
+  
+  
+  /*============================================================
+      Menu Bar Click On Add And Remove CSS Effect Start
+  ===============================================================*/
+  .slideb .header_sec {
+    margin-left: 95px;
+  }
+  
+  .slideb .dashboardBodyRight_sec {
+    margin-left: 95px;
+    border-radius: 40px 0px 0px 40px;
+  }
+  
+  .slideb .admn_lft {
+    left: 0;
+    width: 95px;
+  }
+  
+  /*============================================================
+      Menu Bar Click On Add And Remove CSS Effect End
+  ===============================================================*/
+  
+  
+  /*=====================================================
+      Admin Left Side Menu Panel CSS Section Start
+  =====================================================*/
+  /*============== Left Panel Menu Sidebar Section ==============*/
+  .admn_lft {
+    background: #2b1519;
+    overflow: hidden;
+    z-index: 99;
+    position: fixed;
+    width: 300px;
+    top: 0px;
+    bottom: 0;
+    transition: all 0.5s ease-in-out;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .admn_lft .logo-menubar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-bottom: 1px solid #404E5B;
+    background-color: #182532;
+    height: 89px;
+  }
+  
+  button.closeBTN {
+    display: none;
+  }
+  
+  .admn_lft .ThumbLogo {
+    display: none;
+  }
+  
+  .admn_lft ul {
+    padding: 75px 0px 0px;
+    margin-bottom: 60px;
+  }
+  
+  .admn_lft ul>.sideNav_Btn {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .admn_lft ul>.sideNav_Btn>a {
+    transition: all 0.1s ease-in-out;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+    margin: 0px 0px 3px 20px;
+    border-radius: 30px 0px 0px 30px;
+  }
+  
+  .admn_lft ul>.sideNav_Btn>a>.SideNavIcon {
+    font-size: 22px;
+    width: 27px;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    color: #fcff33;
+  }
+  
+  .admn_lft ul>.sideNav_Btn>a.activenav::before,
+  .admn_lft ul>.sideNav_Btn>a:hover::before {
+    content: '';
+    background: url(../images/nav_before_img.png) no-repeat;
+    display: block;
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    right: -3px;
+    top: -43px;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  .admn_lft ul>.sideNav_Btn>a.activenav::after,
+  .admn_lft ul>.sideNav_Btn>a:hover::after {
+    content: '';
+    background: url(../images/nav_after_img.png) no-repeat;
+    display: block;
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    right: -3px;
+    bottom: -43px;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  .admn_lft ul>.sideNav_Btn>.activenav,
+  .admn_lft ul>.sideNav_Btn>a:hover {
+    background: #f1f0f8;
+    color: #2b1519;
+  }
+  
+  .admn_lft ul>.sideNav_Btn>.activenav i,
+  .admn_lft ul>.sideNav_Btn>a:hover i {
+    color: #2b1519;
+  }
+  
+  .admn_lft ul>.sideNav_Btn>a:hover .dashboardIcon,
+  .admn_lft ul>.sideNav_Btn>.activenav .dashboardIcon {
+    fill: #2b1519 !important;
+  }
+  
+  
+  /*=====================================================
+      Admin Left Side Menu Panel CSS Section End
+  =====================================================*/
+  
+  
+  /*==================================================================
+      On Click MenuBar Admin Left Side Menu Panel CSS Section Start
+  ==================================================================*/
+  .slideb .admn_lft ul>.sideNav_Btn>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+  }
+  
+  .slideb .admn_lft ul>.sideNav_Btn>a span {
+    display: none;
+  }
+  
+  .slideb .admn_lft .logo-menubar {
+    display: none;
+  }
+  
+  .slideb .admn_lft .ThumbLogo {
+    display: flex;
+  }
+  
+  /*==================================================================
+      On Click MenuBar Admin Left Side Menu Panel CSS Section End
+  ==================================================================*/
+  
+  
+  /*==================================================================
+      On Hover Sidebar Menu  Panel CSS Section Start
+  ==================================================================*/
+  .slideb .admn_lft:hover {
+    width: 300px;
+    background: #2b1519;
+    z-index: 9999;
+  }
+  
+  .slideb .admn_lft:hover .dBlockName {
+    display: flex !important;
+  }
+  
+  .slideb .admn_lft:hover .slideBBlockName {
+    display: none !important;
+  }
+  
+  .slideb .admn_lft:hover ul>.sideNav_Btn>a {
+    justify-content: flex-start;
+  }
+  
+  .slideb .admn_lft:hover ul>.sideNav_Btn>a span {
+    display: flex;
+    white-space: tex;
+  }
+  
+  .slideb .admn_lft:hover .logoutBTN_Box .btn {
+    justify-content: start;
+  }
+  
+  .slideb .admn_lft:hover .btn span {
+    display: block;
+  }
+  
+  /*==================================================================
+      On Hover Sidebar Menu  Panel CSS Section End
+  ==================================================================*/
+  
+  
+  /*=====================================================
+      Dashboard Body Right Section Start
+  =====================================================*/
+  /*============== Dashboard Main Content Body Css Section ==============*/
+  .dashboardBodyRight_sec {
+    margin-left: 300px;
+    padding: 90px 0px 75px;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  
+  
+  /*Table Css Here*/
+  .mainWrapper_Sec {
+    padding: 0px 5px;
+    margin-top: 15px;
+  }
+  
+  .mainWrapper_Sec .Wrapper_Box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 20px;
+  }
+  
+  .sectionHeadingBox h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2b1519;
+    margin-bottom: 15px;
+  }
+  
+  
+  /*=========================== Tab Button Css Here ===========================*/
+  .tab_ButtonBox a {
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #1c1e22;
+    padding: 7px 15px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+  .editBtn {
+    background-color: #000000;
+    color: #fff;
+  }
+  
+  .tab_ButtonBox a:hover {
+    background-color: #f8fb41;
+    color: #000;
+  }
+  
+  .viewBtn {
+    background-color: #fff;
+    color: #050505;
+  }
+  
+  .paragraph_Box p {
+    font-size: 15px;
+    color: #6D6D6D;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .branding_Box {
+    text-align: center;
+  }
+  
+  
+  
+  /*=========================== Table Css Here ===========================*/
+  .tableWrapper .dataTables_length label,
+  .tableWrapper .dataTables_filter label {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+  }
+  
+  .tableWrapper .dataTables_length label select,
+  .tableWrapper .dataTables_filter label input {
+    border-radius: 50px;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  .tableWrapper table tr th {
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #2b1519;
+    color: #fff;
+  }
+  
+  .tableWrapper table tr td {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+  }
+  
+  .tableWrapper table.dataTable.display>tbody>tr.odd>td,
+  .tableWrapper table.dataTable.display tbody tr:hover>.sorting_1 {
+    box-shadow: unset;
+  }
+  
+  .tableWrapper .dataTables_paginate {
+    margin-top: 10px;
+  }
+  
+  .tableWrapper table tr td a {
+    font-size: 16px;
+    display: inline-flex;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tableWrapper table tr td a.editBTN {
+    background-color: #dfa711;
+    color: #fff;
+  }
+  
+  .tableWrapper table tr td a.editBTN:hover {
+    background-color: #c9960c;
+  }
+  
+  .tableWrapper table tr td a.deleteBTN {
+    background-color: #b90f0f;
+    color: #fff;
+  }
+  
+  .tableWrapper table tr td a.deleteBTN:hover {
+    background-color: #a70a0a;
+  }
+  
+  /*=====================================================
+      Dashboard Body Right Section Start
+  =====================================================*/
+  
+  
+  .customForm_groupBox label {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+  }
+  
+  .customForm_groupBox>input,
+  .customForm_groupBox>select {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    padding: 10px 15px;
+  }
+  
+  .formBTN_Box {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    text-align: end;
+  }
+  
+  .formBTN_Box a.cancelBTN {
+    border-color: red;
+    color: red;
+  }
+  
+  .formBTN_Box a.cancelBTN:hover {
+    border-color: red;
+    background-color: red;
+    color: #fff;
+  }
+  
+  
+  /*=====================================================
+      Modal Pop-Up Css Section Start
+  =====================================================*/
+  .editUserModal .modal-header {
+    background: #2b1519;
+  }
+  
+  .editUserModal .modal-header h1 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .editUserModal .modal-header button {
+    background-image: url(../images/Close.png);
+  }
+  
+  /*=====================================================
+      Modal Pop-Up Css Section End
+  =====================================================*/
+  
+  
+  
+  /*=====================================================
+      Login Css Section Start
+  =====================================================*/
+  .loginBox {
+    display: flex;
+  }
+  
+  .loginBox .loginFormfieldBox {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .loginWrapper_Box {
+    width: 500px;
+  }
+  
+  .loginBox .loginImgBox {
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .loginBox .loginImgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .loginWrapper_Box a.Logo img {
+    width: 120px;
+  }
+  
+  .loginWrapper_Box h1 {
+    font-size: 26px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 0px 5px;
+    color: #000000c4;
+  }
+  
+  .loginWrapper_Box span {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 5px;
+    color: #000000a1;
+  }
+  
+  .loginWrapper_Box p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #737373;
+  }
+  
+  .cstmFormgroup_Box label {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #474747;
+    padding-left: 3px;
+  }
+  
+  .cstmFormgroup_Box input {
+    padding: 8px 0px 8px 45px;
+    font-size: 16px;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #C9BCBC;
+  }
+  
+  .cstmFormgroup_Box .mailIcon,
+  .cstmFormgroup_Box .passwordIcon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #8d8d8d;
+    font-size: 22px;
+  }
+  
+  .cstmFormgroup_Box .EyeIcon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #8d8d8d;
+    font-size: 22px;
+  }
+  
+  .cstmFormCheck_Box label {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: #474747ab;
+  }
+  
+  .forgotPasswordLink {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: #474747ab;
+    text-decoration: none;
+  }
+  
+  .loginBtnBox .signInBTN {
+    padding: 13px;
+    color: black;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    background: linear-gradient(90deg, #fdff70 22%, #f0e466 51.05%, #f2e12c 85.61%);
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  
+  .account h2 {
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  /*=====================================================
+      Login Css Section End
+  =====================================================*/

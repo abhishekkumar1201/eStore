@@ -1,0 +1,79 @@
+@media screen and (max-width:1080px) {
+
+    /*Sidebar Css Here*/
+    .admn_lft {
+        left: -400px;
+        overflow: initial;
+    }
+
+    .header_sec,
+    .dashboardBodyRight_sec {
+        margin-left: 0;
+    }
+
+    /*On Click Sidebar Css Here*/
+    .slideb .admn_lft {
+        width: 300px;
+    }
+
+    .slideb .header_sec, .slideb .dashboardBodyRight_sec {
+        margin-left: 0px;
+    }
+
+    .slideb .admn_lft .logo-menubar {
+        display: flex;
+        padding-right: 35px;
+    }
+
+    .slideb .admn_lft .ThumbLogo {
+        display: none;
+    }
+
+    .slideb .admn_lft ul>.sideNav_Btn>a {
+        justify-content: start;
+    }
+
+    .slideb .admn_lft ul>.sideNav_Btn>a span {
+        display: block;
+    }
+
+
+    /*On Hover Sidebar Css Here*/
+    .slideb .admn_lft:hover {
+        width: 300px;
+        background: #1F2F3E;
+        z-index: 10;
+    }
+
+    .slideb .admn_lft:hover ul>.sideNav_Btn>a {
+        justify-content: start;
+    }
+
+
+    button.closeBTN {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: -15px;
+        top: 28px;
+        width: 35px;
+        height: 35px;
+        border-radius: 50px;
+        border: none;
+        background: #33ccff;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .columnGap {
+        gap: 30px;
+    }
+} 
+
+@media screen and (max-width:600px) {
+    .slideb .admn_lft {
+        width: 270px;
+    }    
+}
