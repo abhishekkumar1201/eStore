@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\SubCategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -57,7 +60,20 @@ Route::group(['prefix' => '/admin'], function () {
     Route::get('/user-list', function () {
         return view('admin.user-list');
     });
+
+    Route::group(['prefix' => '/category'], function () {
+        Route::get('/', [CategoryController::class, 'index'])->name('category-list');
+        Route::get('/create', [CategoryController::class, 'create'])->name('category-create');
+        Route::get('/edit/{id}', [CategoryController::class, 'edit'])->name('category-edit');
+    });
+
+    Route::group(['prefix' => '/sub-category'], function () {
+        Route::get('/', [SubCategoryController::class, 'index'])->name('sub-category-list');
+        Route::get('/create', [SubCategoryController::class, 'create'])->name('sub-category-create');
+        Route::get('/edit/{id}', [SubCategoryController::class, 'edit'])->name('sub-category-edit');
+    });
+
 });
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');

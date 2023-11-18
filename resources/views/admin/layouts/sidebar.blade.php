@@ -26,21 +26,21 @@
         </li>
 
         <li class="sideNav_Btn">
-          <a href="{{ url('/admin/user-list') }}"><i class="fa-solid fa-user SideNavIcon"></i><span>Manage User</span></a>
+          <a href="{{ route('category-list') }}"><i class="fa-solid fa-user SideNavIcon"></i><span>Manage Category</span></a>
         </li>
 
         <li class="sideNav_Btn">
-          <a href="javascript:void(0);"><i class="fa-solid fa-user SideNavIcon"></i><span>Manage Category</span></a>
-        </li>
-
-        <li class="sideNav_Btn">
-          <a href="javascript:void(0);"><i class="fa-solid fa-user-group SideNavIcon"></i><span>Manage Sub
+          <a href="{{ route('sub-category-list') }}"><i class="fa-solid fa-user SideNavIcon"></i><span>Manage Sub
               Category</span></a>
         </li>
 
         <li class="sideNav_Btn">
           <a href="javascript:void(0);"><i class="fa-solid fa-file-lines SideNavIcon"></i><span>Manage
               Products</span></a>
+        </li>
+
+        <li class="sideNav_Btn">
+          <a href="{{ url('/admin/user-list') }}"><i class="fa-solid fa-user-group SideNavIcon"></i><span>Manage User</span></a>
         </li>
 
         <li class="sideNav_Btn">
