@@ -15,7 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 /**Website Routes */
 Route::get('/', function () {
-    // return view('welcome');
     return view('home');
 });
 Route::get('/home', function () {
@@ -59,3 +58,6 @@ Route::group(['prefix' => '/admin'], function () {
         return view('admin.user-list');
     });
 });
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
